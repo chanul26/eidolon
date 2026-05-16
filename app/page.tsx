@@ -20,7 +20,6 @@ export default function Home() {
           </button>
         </div>
 
-        {/* THIS IS WHAT WAS MISSING! */}
         <div className="mt-8">
           <AvatarViewer />
         </div>
