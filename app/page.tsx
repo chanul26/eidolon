@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import AvatarViewer from "@/components/AvatarViewer";
 
 export default function Home() {
   const [isAnalyzing, setIsAnalyzing] = useState(false)
@@ -12,12 +13,18 @@ export default function Home() {
         </h1>
         <p className="text-gray-400 mb-8 text-lg">Digital Forensic Oracle — Upload data. Interview it.</p>
         
-        <div className="border-2 border-dashed border-gray-700 rounded-xl p-12 text-center bg-gray-900/50">
+        <div className="border-2 border-dashed border-gray-700 rounded-xl p-12 text-center bg-gray-900/50 mb-8">
           <p className="text-gray-400 mb-4">Upload your system logs to begin the forensic analysis.</p>
           <button className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition-colors">
             Select JSON/CSV File
           </button>
         </div>
+
+        {/* THIS IS WHAT WAS MISSING! */}
+        <div className="mt-8">
+          <AvatarViewer />
+        </div>
+
       </div>
     </main>
   )
