@@ -1,0 +1,8 @@
+[
+    {"timestamp": "09:00", "service": "auth", "level": "INFO", "message": "User login successful", "ip": "192.168.1.5"},
+    {"timestamp": "09:05", "service": "database", "level": "INFO", "message": "Query executed successfully", "ip": "10.0.0.2"},
+    {"timestamp": "09:12", "service": "api", "level": "INFO", "message": "GET /inventory 200 OK", "ip": "192.168.1.12"},
+    {"timestamp": "09:14", "service": "security", "level": "FATAL", "message": "UNAUTHORIZED ACCESS: 84,700 records exported to external IP.", "ip": "185.220.101.45"},
+    {"timestamp": "09:20", "service": "payments", "level": "INFO", "message": "Transaction processed: $45.00", "ip": "10.0.0.5"},
+    {"timestamp": "09:30", "service": "auth", "level": "INFO", "message": "Token refreshed", "ip": "192.168.1.5"}
+  ]
