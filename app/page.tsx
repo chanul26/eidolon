@@ -36,7 +36,7 @@ export default function Home() {
       
       // 3. Trigger Beyond Presence Avatar
       const session = await createAvatarSession(result.systemPrompt)
-      setAvatarUrl(session.url || session.conversation_url || session.room_url) 
+      setAvatarUrl(session.url) 
 
     } catch (error) {
       console.error("EIDOLON Pipeline failed:", error)
@@ -82,7 +82,7 @@ export default function Home() {
           <div className="xl:col-span-2 space-y-8">
             {!avatarUrl && (
               <div className="backdrop-blur-2xl bg-white/5 border border-white/10 rounded-3xl p-6 shadow-[0_0_50px_rgba(59,130,246,0.08)]">
-                <FileUpload onFileSelect={handleUpload} isLoading={isAnalyzing} />
+                <FileUpload onFileSelect={handleUpload} />
               </div>
             )}
 
